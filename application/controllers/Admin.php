@@ -545,14 +545,19 @@ class Admin extends CI_Controller{
 
   public function proses_data_permintaan_keluar()
   {
+    $this->form_validation->set_rules('tanggal_keluar','Tanggal Keluar','trim|required');
+    if($this->form_validation->run() === TRUE)
+    {
       $id_transaksi   = $this->input->post('id_transaksi',TRUE);
-      $tanggal_masuk  = $this->input->post('tanggal_masuk',TRUE);
+      $tanggal_masuk  = $this->input->post('tanggal',TRUE);
       $tanggal_keluar = $this->input->post('tanggal_keluar',TRUE);
       $lokasi         = $this->input->post('lokasi',TRUE);
+      $name           = $this->input->post('name',TRUE);
       $kode_barang    = $this->input->post('kode_barang',TRUE);
       $nama_barang    = $this->input->post('nama_barang',TRUE);
       $satuan         = $this->input->post('satuan',TRUE);
       $jumlah         = $this->input->post('jumlah',TRUE);
+ 
 
       $where = array( 'id_transaksi' => $id_transaksi);
       $data = array(
@@ -560,16 +565,35 @@ class Admin extends CI_Controller{
               'tanggal_masuk' => $tanggal_masuk,
               'tanggal_keluar' => $tanggal_keluar,
               'lokasi' => $lokasi,
+              'name' => $name,
               'kode_barang' => $kode_barang,
               'nama_barang' => $nama_barang,
               'satuan' => $satuan,
               'jumlah' => $jumlah
+              
+              
       );
         $this->M_admin->insert('tb_barang_keluar',$data);
+        // $this->M_admin->delete('tb_request',$where);
         $this->session->set_flashdata('msg_berhasil_keluar','Data Berhasil Keluar');
         redirect(base_url('admin/tabel_permintaan'));
+        
+    }else {
+      $this->load->view('perpindahan_barang/form_update/'.$id_transaksi);
+    }
 
   }
+
+  // public function cek_status()
+  // {
+  //   if($this->proses_data_permintaan_keluar()->run() === TRUE)
+  //   {
+      
+  //   }
+    
+
+
+  // }
 
 }
 ?>

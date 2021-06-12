@@ -31,6 +31,8 @@
           <td><?=$dd->nama_barang?></td>
           <td><?=$dd->satuan?></td>
           <td><?=$dd->jumlah?></td>
+          <td><?=$dd->status?></td>
+          
       </tr>
     <?php $no++; ?>
     <?php endforeach;?>

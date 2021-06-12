@@ -22,7 +22,7 @@ class Report extends CI_Controller
     $pdf->SetSubject('Barang Keluar');
 
     //header Data
-    $pdf->SetHeaderData('unsada.jpg',30,'Laporan Data','Barang Keluar',array(203, 58, 44),array(0, 0, 0));
+    $pdf->SetHeaderData('Logo_USU.jpg',30,'Laporan Data','Barang Keluar',array(203, 58, 44),array(0, 0, 0));
     $pdf->SetFooterData(array(255, 255, 255), array(255, 255, 255));
 
 
@@ -116,7 +116,7 @@ class Report extends CI_Controller
     $pdf->SetSubject('Barang Keluar');
 
     //header Data
-    $pdf->SetHeaderData('unsada.jpg',30,'Laporan Data','Barang Keluar',array(203, 58, 44),array(0, 0, 0));
+    $pdf->SetHeaderData('Logo_USU.jpg',30,'Laporan Data','Barang Keluar',array(203, 58, 44),array(0, 0, 0));
     $pdf->SetFooterData(array(255, 255, 255), array(255, 255, 255));
 
 
@@ -146,7 +146,7 @@ class Report extends CI_Controller
       '<div>
         <h1 align="center">Invoice Bukti Pengeluaran Barang</h1><br>
         <p>No Id Transaksi  : '.$id.'</p>
-        <p>Ditunjukan Untuk :</p>
+        <p>Ditunjukan Untuk : </p>
         <p>Tanggal          : '.$tgl1.'/'.$tgl2.'/'.$tgl3.'</p>
         <p>Po.Customer      :</p>
 

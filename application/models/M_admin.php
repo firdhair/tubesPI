@@ -100,6 +100,11 @@ class M_admin extends CI_Model
 
     return $query->result();
   }
+
+  public function pengurangan($tabel,$id_transaksi,$jumlah)
+  {
+    
+  }
   
 
 

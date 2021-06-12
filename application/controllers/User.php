@@ -188,6 +188,7 @@ class User extends CI_Controller
       $tanggal_masuk  = $this->input->post('tanggal',TRUE);
       $tanggal_keluar = $this->input->post('tanggal_keluar',TRUE);
       $lokasi         = $this->input->post('lokasi',TRUE);
+      $name           = $this->session->userdata('name');
       $kode_barang    = $this->input->post('kode_barang',TRUE);
       $nama_barang    = $this->input->post('nama_barang',TRUE);
       $satuan         = $this->input->post('satuan',TRUE);
@@ -199,6 +200,7 @@ class User extends CI_Controller
               'tanggal_masuk' => $tanggal_masuk,
               'tanggal_keluar' => $tanggal_keluar,
               'lokasi' => $lokasi,
+              'name'  => $name,
               'kode_barang' => $kode_barang,
               'nama_barang' => $nama_barang,
               'satuan' => $satuan,
@@ -207,7 +209,7 @@ class User extends CI_Controller
 
         $this->M_user->insert('tb_request',$data);
         $this->session->set_flashdata('msg_berhasil_keluar','Data Berhasil Keluar');
-        redirect(base_url('user/tabel/tabel_barangmasuk'));
+        redirect(base_url('user/tabel/tabel_barangkeluar'));
     }else {
       $this->load->view('user/tabel/form_permintaan'.$id_transaksi);
     }
