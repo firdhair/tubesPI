@@ -209,7 +209,7 @@ class User extends CI_Controller
 
         $this->M_user->insert('tb_request',$data);
         $this->session->set_flashdata('msg_berhasil_keluar','Data Berhasil Keluar');
-        redirect(base_url('user/tabel/tabel_barangkeluar'));
+        redirect(base_url('user'));
     }else {
       $this->load->view('user/tabel/form_permintaan'.$id_transaksi);
     }

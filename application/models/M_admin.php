@@ -106,7 +106,10 @@ class M_admin extends CI_Model
     
   }
   
-
+  public function update_status_request($status,$id_transaksi)
+  {
+    $this->db->set('status',$status)->where('id_transaksi',$id_transaksi)->update('tb_request');
+  }
 
 }
 

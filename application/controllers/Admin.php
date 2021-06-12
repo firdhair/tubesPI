@@ -557,6 +557,7 @@ class Admin extends CI_Controller{
       $nama_barang    = $this->input->post('nama_barang',TRUE);
       $satuan         = $this->input->post('satuan',TRUE);
       $jumlah         = $this->input->post('jumlah',TRUE);
+
  
 
       $where = array( 'id_transaksi' => $id_transaksi);
@@ -569,11 +570,12 @@ class Admin extends CI_Controller{
               'kode_barang' => $kode_barang,
               'nama_barang' => $nama_barang,
               'satuan' => $satuan,
-              'jumlah' => $jumlah
-              
+              'jumlah' => $jumlah   
               
       );
+        
         $this->M_admin->insert('tb_barang_keluar',$data);
+        $this->M_admin->update_status_request(1,$id_transaksi);
         // $this->M_admin->delete('tb_request',$where);
         $this->session->set_flashdata('msg_berhasil_keluar','Data Berhasil Keluar');
         redirect(base_url('admin/tabel_permintaan'));
