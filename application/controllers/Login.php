@@ -54,18 +54,18 @@ class Login extends CI_Controller {
 					$this->M_login->edit_user(['username' => $username],['last_login' => date('d-m-Y G:i')]);
 
 						if($isi->role == 1){
-							redirect(base_url('admin'));
+							redirect(site_url('admin'));
 						}else {
-							redirect(base_url('user'));
+							redirect(site_url('user'));
 						}
 
 				}else {
-					$this->session->set_flashdata('msg','Username Dan Password Salah');
-					redirect(base_url());
+					$this->session->set_flashdata('msg','Username atau Password salah');
+					redirect(site_url());
 				}
 			}
 		}else {
-			redirect(base_url());
+			redirect(site_url());
 		}
 	}
 }

@@ -1,5 +1,5 @@
- Content Wrapper. Contains page content
- <div class="content-wrapper">
+
+ <div class="content-wrapper" >
     <!-- Content Header (Page header) -->
     <!-- <section class="content-header">
       <h1>
@@ -13,10 +13,11 @@
     </section> -->
 
     <!-- Main content -->
-    <section class="content">
+    <br><br><br>
+    <section class="content" id="form_permintaan">
       <div class="row">
         <!-- left column -->
-        <div class="col-md-12">
+        <div class="col-md-12" id=>
           <div class="container">
             <!-- general form elements -->
           <div class="box box-primary" style="width:94%;">
@@ -26,7 +27,7 @@
             <!-- /.box-header -->
             <!-- form start -->
             <div class="container">
-            <form action="<?=base_url('user/proses_data_keluar')?>" role="form" method="post">
+            <form action="<?=site_url('user/proses_data_keluar')?>" role="form" method="post">
 
               <?php if(validation_errors()){ ?>
               <div class="alert alert-warning alert-dismissible">

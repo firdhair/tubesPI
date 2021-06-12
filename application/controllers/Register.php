@@ -57,7 +57,7 @@ class Register extends CI_Controller {
         $this->M_login->insert('tb_upload_gambar_user',$dataUpload);
 
 				$this->session->set_flashdata('msg_terdaftar','Anda Berhasil Register');
-        redirect(base_url('login/register'));
+        redirect(site_url('login/register'));
       }
     }else {
       $this->load->view('login/register');

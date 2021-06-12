@@ -1,0 +1,51 @@
+#navbar {
+	background-color: white;
+	border-style: none;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+#container {
+	width: 85%;
+	margin: auto;
+}
+
+#dropdown:hover,
+#dropdown:focus,
+#home:hover,
+#setting:hover,
+#sign_out:hover {
+	background-color: #c1dfc4;
+	color: white;
+}
+
+a {
+	color: rgb(58, 58, 58) !important;
+}
+
+/* BODY STYLE*/
+.hero {
+	min-height: 100vh;
+	width: 92%;
+	margin: 0 0 0 auto;
+	display: flex;
+	color: rgb(58, 58, 58);
+}
+
+.hero-introduction {
+	flex: 2 1 55rem;
+}
+
+.hero-introduction p {
+	padding: 1rem 7rem 0.5rem 0rem;
+}
+
+.hero-introduction h2 {
+	padding-top: 15rem;
+}
+
+.hero-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

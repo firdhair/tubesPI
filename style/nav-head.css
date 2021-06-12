@@ -67,8 +67,9 @@
 
 #logo {
 	background: linear-gradient(#a3b3c7, #663399);
-	background-clip: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
 	font-family: "Poppins", sans-serif;
 	font-size: 2.4rem;
 }
@@ -114,7 +115,8 @@
 #content_box1,
 #content_box2,
 #content_box3,
-#content_box4 {
+#content_box4,
+#content_box5 {
 	border-radius: 1.7rem;
 	padding: 2.5rem 2.5rem;
 	min-height: 30vh;
@@ -123,12 +125,17 @@
 #content_box1 p,
 #content_box2 p,
 #content_box3 p,
-#content_box4 p {
+#content_box4 p,
+#content_box5 p {
 	padding-top: 1rem;
 	font-size: 2rem;
 	font-family: "Mitr", sans-serif;
 	font-weight: initial;
 	line-height: normal;
+}
+
+.h3 {
+	padding: 1rem 10rem 1rem 1rem;
 }
 
 #developer {
@@ -141,11 +148,16 @@
 #box_footer2,
 #box_footer3,
 #box_footer4 {
-	margin-top: 6rem;
+	margin-top: 4rem;
 	font-size: 1.7rem;
 	font-family: "Mitr", sans-serif;
 	font-weight: initial;
 	line-height: normal;
+}
+
+#box_footer1,
+#box_footer2 {
+	margin-top: 0.4rem;
 }
 
 #content_box1 {
@@ -157,6 +169,7 @@
 		#b0dbb9,
 		#d9ecc7
 	);
+	max-height: 40vh;
 }
 
 #content_box2 {
@@ -168,6 +181,7 @@
 		#84ae74,
 		#b1d182
 	);
+	max-height: 40vh;
 }
 
 #content_box3 {
@@ -189,6 +203,17 @@
 		#ae3846,
 		#922a3d,
 		#771d32
+	);
+}
+
+#content_box5 {
+	background-image: linear-gradient(
+		to left bottom,
+		#50d5b7,
+		#40bea3,
+		#30a88f,
+		#1e927b,
+		#067d68
 	);
 }
 

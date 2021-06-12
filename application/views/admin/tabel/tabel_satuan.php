@@ -51,7 +51,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="<?=base_url('admin')?>" class="logo" id="logo2">
+    <a href="<?=site_url('admin')?>" class="logo" id="logo2">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -104,10 +104,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?=base_url('admin/profile')?>" class="btn btn-default btn-flat"><i class="fa fa-cogs" aria-hidden="true"></i> Profile</a>
+                  <a href="<?=site_url('admin/profile')?>" class="btn btn-default btn-flat"><i class="fa fa-cogs" aria-hidden="true"></i> Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?= base_url('admin/sigout'); ?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
+                  <a href="<?= site_url('admin/sigout'); ?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
                 </div>
               </li>
             </ul>
@@ -140,13 +140,13 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header" id="header">MAIN NAVIGATION</li>
         <li>
-          <a href="<?= base_url('admin')?>" id="dashboard">
+          <a href="<?= site_url('admin')?>" id="dashboard">
           <span>Dashboard</span>
             <i class="mdi mdi-home menu-icon" id="icon_dashboard"></i>
           </a>
           <!-- <ul class="treeview-menu">
-            <li><a href="<?php echo base_url()?>assets/web_admin/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="<?php echo base_url('admin')?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul> -->
         </li>
 
@@ -158,8 +158,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a id="barangmsk" href="<?php echo base_url('admin/form_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tambah Data Barang Masuk</a></li>
-            <li><a id="satuanbrg" href="<?php echo base_url('admin/form_satuan')?>"><i class="fa fa-circle-o"></i> Tambah Satuan Barang</a></li>
+            <li><a id="barangmsk" href="<?php echo site_url('admin/form_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tambah Data Barang Masuk</a></li>
+            <li><a id="satuanbrg" href="<?php echo site_url('admin/form_satuan')?>"><i class="fa fa-circle-o"></i> Tambah Satuan Barang</a></li>
           </ul>
         </li>
         <li class="treeview active" id="treeview_tables">
@@ -170,14 +170,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-          <li><a id="tabelmsk" href="<?= base_url('admin/tabel_barangmasuk') ?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
-            <li><a id="tabelkeluar" href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
-            <li><a id="active" href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
+          <li><a id="tabelmsk" href="<?= site_url('admin/tabel_barangmasuk') ?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
+            <li><a id="tabelkeluar" href="<?= site_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
+            <li><a id="active" href="<?= site_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
           </ul>
 
         <li class="header" id="labels">LABELS</li>
         <li>
-          <a href="<?php echo base_url('admin/profile')?>" id="a_profile">
+          <a href="<?php echo site_url('admin/profile')?>" id="a_profile">
          <span id="profile">Profile</span> 
          <span class="pull-right-container">
            <i class="mdi mdi-contacts menu-icon" id="icon_profile"></i>
@@ -185,7 +185,7 @@
         </a>
         </li>
         <li> 
-          <a href="<?php echo base_url('admin/users')?>" id="a_users">
+          <a href="<?php echo site_url('admin/users')?>" id="a_users">
           <span id="users">Users</span>
           <span class="pull-right-container">
             <i class="fa fa-fw fa-users" aria-hidden="true" id="icon_users"></i>
@@ -205,9 +205,9 @@
         Tabel Satuan
       </h1>
       <ol class="breadcrumb">
-        <li><a href="<?=base_url('admin')?>"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="<?=site_url('admin')?>"><i class="fa fa-dashboard"></i> Home</a></li>
         <li>Tables</li>
-        <li class="active"><a href="<?=base_url('admin/tabel_satuan')?>">Tabel Satuan</a></li>
+        <li class="active"><a href="<?=site_url('admin/tabel_satuan')?>">Tabel Satuan</a></li>
       </ol>
     </section>
 
@@ -231,7 +231,7 @@
                </div>
               <?php } ?>
 
-              <a href="<?=base_url('admin/form_satuan')?>" id="button3" style="margin-bottom:10px;" type="button" class="btn btn-primary" name="tambah_data"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tambah Data</a>
+              <a href="<?=site_url('admin/form_satuan')?>" id="button3" style="margin-bottom:10px;" type="button" class="btn btn-primary" name="tambah_data"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tambah Data</a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -250,8 +250,8 @@
                     <td><?=$no?></td>
                     <td><?=$dd->kode_satuan?></td>
                     <td><?=$dd->nama_satuan?></td>
-                    <td><a type="button" class="btn btn-info"  href="<?=base_url('admin/update_satuan/'.$dd->id_satuan)?>" name="btn_update" style="margin:auto;"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
-                    <td><a type="button" class="btn btn-danger btn-delete"  href="<?=base_url('admin/delete_satuan/'.$dd->id_satuan)?>" name="btn_delete" style="margin:auto;"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                    <td><a type="button" class="btn btn-info"  href="<?=site_url('admin/update_satuan/'.$dd->id_satuan)?>" name="btn_update" style="margin:auto;"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                    <td><a type="button" class="btn btn-danger btn-delete"  href="<?=site_url('admin/delete_satuan/'.$dd->id_satuan)?>" name="btn_delete" style="margin:auto;"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
                 </tr>
               <?php $no++; ?>
               <?php endforeach;?>
