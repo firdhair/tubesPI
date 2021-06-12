@@ -11,7 +11,7 @@
         <div class="hero-images">
           <img
             class="hero-image"
-            src="./style/home4.png"
+            src="<?php echo base_url('/style/home4.png')?>"
             alt="picture of logistic "
           />
         </div>

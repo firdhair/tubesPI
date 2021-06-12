@@ -51,7 +51,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="<?=base_url('admin')?>" class="logo" id="logo2">
+    <a href="<?=site_url('admin')?>" class="logo" id="logo2">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -104,10 +104,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?=base_url('admin/profile')?>" class="btn btn-default btn-flat"><i class="fa fa-cogs" aria-hidden="true"></i> Profile</a>
+                  <a href="<?=site_url('admin/profile')?>" class="btn btn-default btn-flat"><i class="fa fa-cogs" aria-hidden="true"></i> Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?= base_url('admin/sigout'); ?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
+                  <a href="<?= site_url('admin/sigout'); ?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
                 </div>
               </li>
             </ul>
@@ -125,7 +125,7 @@
       <div class="user-panel">
         <div class="pull-left image">
           <?php foreach($avatar as $a){ ?>
-          <img src="<?php echo base_url('assets/upload/user/img/'.$a->nama_file)?>" class="img-circle" alt="User Image">
+          <img src="<?php echo site_url('assets/upload/user/img/'.$a->nama_file)?>" class="img-circle" alt="User Image">
           <?php } ?>
         </div>
         <div class="pull-left info">
@@ -140,13 +140,13 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header" id="header">MAIN NAVIGATION</li>
         <li>
-          <a href="<?= base_url('admin')?>" id="dashboard">
+          <a href="<?= site_url('admin')?>" id="dashboard">
           <span>Dashboard</span>
             <i class="mdi mdi-home menu-icon" id="icon_dashboard"></i>
           </a>
           <!-- <ul class="treeview-menu">
-            <li><a href="<?php echo base_url()?>assets/web_admin/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="<?php echo base_url('admin')?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul> -->
         </li>
 
@@ -158,8 +158,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a id="barangmsk" href="<?php echo base_url('admin/form_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tambah Data Barang Masuk</a></li>
-            <li><a id="active" href="<?php echo base_url('admin/form_satuan')?>"><i class="fa fa-circle-o"></i> Tambah Satuan Barang</a></li>
+            <li><a id="barangmsk" href="<?php echo site_url('admin/form_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tambah Data Barang Masuk</a></li>
+            <li><a id="active" href="<?php echo site_url('admin/form_satuan')?>"><i class="fa fa-circle-o"></i> Tambah Satuan Barang</a></li>
           </ul>
         </li>
         <li class="treeview" id="treeview_tables">
@@ -170,14 +170,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-          <li><a id="tabelmsk" href="<?= base_url('admin/tabel_barangmasuk') ?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
-            <li><a id="tabelkeluar" href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
-            <li><a id="tabelsatuan" href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
+          <li><a id="tabelmsk" href="<?= site_url('admin/tabel_barangmasuk') ?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
+            <li><a id="tabelkeluar" href="<?= site_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
+            <li><a id="tabelsatuan" href="<?= site_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
           </ul>
 
         <li class="header" id="labels">LABELS</li>
         <li>
-          <a href="<?php echo base_url('admin/profile')?>" id="a_profile">
+          <a href="<?php echo site_url('admin/profile')?>" id="a_profile">
          <span id="profile">Profile</span> 
          <span class="pull-right-container">
            <i class="mdi mdi-contacts menu-icon" id="icon_profile"></i>
@@ -185,7 +185,7 @@
         </a>
         </li>
         <li> 
-          <a href="<?php echo base_url('admin/users')?>" id="a_users">
+          <a href="<?php echo site_url('admin/users')?>" id="a_users">
           <span id="users">Users</span>
           <span class="pull-right-container">
             <i class="fa fa-fw fa-users" aria-hidden="true" id="icon_users"></i>
@@ -225,7 +225,7 @@
             <!-- /.box-header -->
             <!-- form start -->
             <div class="container">
-            <form action="<?=base_url('admin/proses_satuan_update')?>" role="form" method="post">
+            <form action="<?=site_url('admin/proses_satuan_update')?>" role="form" method="post">
 
               <?php if(validation_errors()){ ?>
               <div class="alert alert-warning alert-dismissible">
@@ -255,7 +255,7 @@
 
                     <div class="box-footer" style="width:93%;">
                       <a type="button" id="button2" class="btn btn-default" style="width:10%;margin-right:26%;font-family: 'Ubuntu', sans-serif;color:rgb(63, 63, 63);" onclick="history.back(-1)" name="btn_kembali"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</a>
-                      <a type="button" id="button3" class="btn btn-info" style="width:13%;margin-right:29%;font-family: 'Ubuntu', sans-serif;" href="<?=base_url('admin/tabel_satuan')?>" name="btn_listsatuan"><i class="fa fa-table" aria-hidden="true"></i> Lihat Satuan</a>
+                      <a type="button" id="button3" class="btn btn-info" style="width:13%;margin-right:29%;font-family: 'Ubuntu', sans-serif;" href="<?=site_url('admin/tabel_satuan')?>" name="btn_listsatuan"><i class="fa fa-table" aria-hidden="true"></i> Lihat Satuan</a>
                       <button type="submit" id="button4" style="width:20%" class="btn btn-primary"><i class="fa fa-check" aria-hidden="true"></i> Submit</button>
                     </div>
             </form>

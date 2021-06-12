@@ -16,7 +16,7 @@
             <h4 class="dashboard-title">Change Password</h4>
               <hr>
 
-              <form action="<?php echo base_url('user/proses_new_password') ?>" method="post">
+              <form action="<?php echo site_url('user/proses_new_password') ?>" method="post">
 
                 <?php if($this->session->flashdata('msg_berhasil')){ ?>
                   <div class="alert alert-success alert-dismissible">
@@ -57,7 +57,7 @@
                 <?php if(isset($token_generate)){ ?>
                   <input type="hidden" name="token"  class="form-control" value="<?= $token_generate?>">
                 <?php }else {
-                  redirect(base_url('user/setting'));
+                  redirect(site_url('user/setting'));
                 }?>
 
                 <div class="form-group">

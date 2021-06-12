@@ -28,7 +28,7 @@
 
 <body>
   <div class="wrapper">
-  <form action="<?= base_url('register/proses_register')?>" class="login" method="post">
+  <form action="<?= site_url('register/proses_register')?>" class="login" method="post">
 
     <p class="title"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</p>
     <?php if($this->session->flashdata('msg')){ ?>
@@ -67,7 +67,7 @@
 
     <i class="fa fa-key"></i>
 
-    <?php echo anchor(base_url('login'),'Log In') ?><br>
+    <?php echo anchor(site_url('login'),'Log In') ?><br>
 
     <!-- <a href="#">Forgot your password?</a> -->
 

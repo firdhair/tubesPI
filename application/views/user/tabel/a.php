@@ -12,6 +12,7 @@
         <th>Nama Barang</th>
         <th>Satuan</th>
         <th>Jumlah</th>
+        <th>Keterangan</th>
       </tr>
     </thead>
     <tbody>
@@ -27,7 +28,7 @@
           <td><?=$dd->nama_barang?></td>
           <td><?=$dd->satuan?></td>
           <td><?=$dd->jumlah?></td>
-          <td><a type="button" class="btn btn-success btn-barangkeluar"  href="<?=base_url('user/barang_keluar/'.$dd->id_transaksi)?>" name="btn_barangkeluar" style="margin:auto;"><i class="fa fa-sign-out" aria-hidden="true"></i></a></td>
+          <td><a type="button" class="btn btn-success btn-barangkeluar"  href="<?=site_url('user/barang_keluar/'.$dd->id_transaksi)?>" name="btn_barangkeluar" style="margin:auto;"><i class="fa fa-sign-out" aria-hidden="true"></i></a></td>
       </tr>
     <?php $no++; ?>
     <?php endforeach;?>

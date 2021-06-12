@@ -34,7 +34,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="<?php echo base_url('admin')?>" class="logo">
+    <a href="<?php echo site_url('admin')?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -79,7 +79,7 @@
                   <a href="#" class="btn btn-default btn-flat"><i class="fa fa-cogs" aria-hidden="true"></i> Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?= base_url('admin/sigout')?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
+                  <a href="<?= site_url('admin/sigout')?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
                 </div>
               </li>
             </ul>
@@ -113,15 +113,15 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li>
-          <a href="<?= base_url('admin')?>">
+          <a href="<?= site_url('admin')?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
           </a>
           <!-- <ul class="treeview-menu">
-            <li><a href="<?php echo base_url()?>assets/web_admin/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="<?php echo base_url('admin')?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul> -->
         </li>
 
@@ -133,8 +133,8 @@
                 </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?= base_url('admin/form_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tambah Data Barang Masuk</a></li>
-            <li><a href="<?= base_url('admin/form_satuan')?>"><i class="fa fa-circle-o"></i> Tambah Satuan Barang</a></li>
+            <li><a href="<?= site_url('admin/form_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tambah Data Barang Masuk</a></li>
+            <li><a href="<?= site_url('admin/form_satuan')?>"><i class="fa fa-circle-o"></i> Tambah Satuan Barang</a></li>
           </ul>
         </li>
         <li class="treeview active">
@@ -145,18 +145,18 @@
                 </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?= base_url('admin/tabel_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
-            <li><a href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
-            <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
+            <li class="active"><a href="<?= site_url('admin/tabel_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
+            <li><a href="<?= site_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
+            <li><a href="<?= site_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
           </ul>
         </li>
         <li class="header">LABELS</li>
         <li>
-          <a href="<?php echo base_url('admin/profile')?>">
+          <a href="<?php echo site_url('admin/profile')?>">
          <i class="fa fa-cogs" aria-hidden="true"></i> <span>Profile</span></a>
         </li>
         <li>
-          <a href="<?php echo base_url('admin/users')?>">
+          <a href="<?php echo site_url('admin/users')?>">
          <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Users</span></a>
         </li>
       </ul>
@@ -173,7 +173,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="<?=base_url('admin/tabel_barangmasuk')?>">Tables</a></li>
+        <li><a href="<?=site_url('admin/tabel_barangmasuk')?>">Tables</a></li>
         <li class="active">Tambah Barang Keluar</li>
       </ol>
     </section>
@@ -192,7 +192,7 @@
             <!-- /.box-header -->
             <!-- form start -->
             <div class="container">
-            <form action="<?=base_url('admin/proses_data_keluar')?>" role="form" method="post">
+            <form action="<?=site_url('admin/proses_data_keluar')?>" role="form" method="post">
 
               <?php if(validation_errors()){ ?>
               <div class="alert alert-warning alert-dismissible">

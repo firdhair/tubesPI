@@ -51,7 +51,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="<?=base_url('admin')?>" class="logo" id="logo2">
+    <a href="<?=site_url('admin')?>" class="logo" id="logo2">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -104,10 +104,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?=base_url('admin/profile')?>" class="btn btn-default btn-flat"><i class="fa fa-cogs" aria-hidden="true"></i> Profile</a>
+                  <a href="<?=site_url('admin/profile')?>" class="btn btn-default btn-flat"><i class="fa fa-cogs" aria-hidden="true"></i> Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?= base_url('admin/sigout'); ?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
+                  <a href="<?= site_url('admin/sigout'); ?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
                 </div>
               </li>
             </ul>
@@ -141,12 +141,12 @@
         <li class="header" id="header">MAIN NAVIGATION</li>
 
         <li class="treeview active" id="dashboard_sidebar">
-          <a href="<?php echo base_url('admin')?>" id="dashboard">
+          <a href="<?php echo site_url('admin')?>" id="dashboard">
           <span>Dashboard</span>
             <i class="mdi mdi-home menu-icon" id="icon_dashboard"></i>
           </a>
           <!-- <ul class="treeview-menu">
-            <li class="active"><a href="<?= base_url('admin') ?>"><i class="fa fa-circle-o"></i> Dashboard</a></li>
+            <li class="active"><a href="<?= site_url('admin') ?>"><i class="fa fa-circle-o"></i> Dashboard</a></li>
             <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul> -->
         </li>
@@ -159,10 +159,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li> -->
         <!-- <li>
@@ -182,10 +182,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -197,12 +197,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="<?php echo base_url()?>assets/web_admin/pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+            <li><a href="<?php echo site_url()?>assets/web_admin/pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li> -->
         <li class="treeview" id="edit_forms">
@@ -213,8 +213,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a id="barangmsk" href="<?php echo base_url('admin/form_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tambah Data Barang Masuk</a></li>
-            <li><a id="satuanbrg" href="<?php echo base_url('admin/form_satuan')?>"><i class="fa fa-circle-o"></i> Tambah Satuan Barang</a></li>
+            <li><a id="barangmsk" href="<?php echo site_url('admin/form_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tambah Data Barang Masuk</a></li>
+            <li><a id="satuanbrg" href="<?php echo site_url('admin/form_satuan')?>"><i class="fa fa-circle-o"></i> Tambah Satuan Barang</a></li>
           </ul>
         </li>
         <li class="treeview" id="treeview_tables">
@@ -225,15 +225,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a id="tabelmsk" href="<?= base_url('admin/tabel_barangmasuk') ?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
-            <li><a id="tabelkeluar" href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
-            <li><a id="" href="<?= base_url('admin/tabel_permintaan')?>"><i class="fa fa-circle-o"></i> Tabel Permintaan Barang</a></li>
-            <li><a id="tabelsatuan" href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
+            <li><a id="tabelmsk" href="<?= site_url('admin/tabel_barangmasuk') ?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
+            <li><a id="tabelkeluar" href="<?= site_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
+            <li><a id="" href="<?= site_url('admin/tabel_permintaan')?>"><i class="fa fa-circle-o"></i> Tabel Permintaan Barang</a></li>
+            <li><a id="tabelsatuan" href="<?= site_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
           </ul>
 
         <li class="header" id="labels">LABELS</li>
         <li>
-          <a href="<?php echo base_url('admin/profile')?>" id="a_profile">
+          <a href="<?php echo site_url('admin/profile')?>" id="a_profile">
          <span id="profile">Profile</span> 
          <span class="pull-right-container">
            <i class="mdi mdi-contacts menu-icon" id="icon_profile"></i>
@@ -241,7 +241,7 @@
         </a>
         </li>
         <li> 
-          <a href="<?php echo base_url('admin/users')?>" id="a_users">
+          <a href="<?php echo site_url('admin/users')?>" id="a_users">
           <span id="users">Users</span>
           <span class="pull-right-container">
             <i class="fa fa-fw fa-users" aria-hidden="true" id="icon_users"></i>
@@ -287,7 +287,7 @@
             <div class="icon">
               <i class="ion ion-bag"></i>
             </div>
-            <a href="<?=base_url('admin/tabel_barangmasuk')?>" class="small-box-footer" id="box_footer1">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?=site_url('admin/tabel_barangmasuk')?>" class="small-box-footer" id="box_footer1">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -307,7 +307,7 @@
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="<?=base_url('admin/tabel_barangkeluar')?>" class="small-box-footer" id="box_footer2">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?=site_url('admin/tabel_barangkeluar')?>" class="small-box-footer" id="box_footer2">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -323,7 +323,7 @@
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="<?=base_url('admin/users')?>" class="small-box-footer" id="box_footer3">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?=site_url('admin/users')?>" class="small-box-footer" id="box_footer3">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -338,7 +338,7 @@
             <div class="icon">
               <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="<?=base_url('admin/tabel_barangkeluar')?>" class="small-box-footer" id="box_footer4">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?=site_url('admin/tabel_barangkeluar')?>" class="small-box-footer" id="box_footer4">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -347,16 +347,17 @@
          <!-- ./col -->
          <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-red" id="content_box4">
+          <div class="small-box bg-red" id="content_box3">
             <div class="inner">
-              <h3>Permintaan barang</h3>
+              <h3 class="h3">Permintaan <br>
+              barang</h3>
 
               <p>Daftar Permintaan</p>
             </div>
             <div class="icon">
               <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="<?=base_url('admin/tabel_permintaan')?>" class="small-box-footer" id="box_footer4">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?=site_url('admin/tabel_permintaan')?>" class="small-box-footer" id="box_footer4">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

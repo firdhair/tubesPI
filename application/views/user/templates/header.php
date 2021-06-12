@@ -41,14 +41,14 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
       <div class="container" id="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="<?= base_url('user')?>" id="home">Home</a>
+          <a class="navbar-brand" href="<?= site_url('user')?>" id="home">Home</a>
         </div>
           <ul class="nav navbar-nav mr-auto">
             <!-- <li><a class="nav-link" href="#">Home</a></li> -->
             <li class="dropdown"><a class="dropdown" id="dropdown" data-toggle="dropdown" href="#"><i class="fa fa-database" aria-hidden="true"></i> Fitur <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="<?=base_url('user/tabel_barangmasuk');?>">TABEL STOCK BARANG</a></li>
-                <li><a href="<?=base_url('user/tabel_barangkeluar');?>">TABEL PERMINTAAN ADMIN</a></li>
+                <li><a href="<?=site_url('user/tabel_barangmasuk');?>">TABEL STOCK BARANG</a></li>
+                <li><a href="<?=site_url('user/tabel_barangkeluar');?>">TABEL PERMINTAAN ADMIN</a></li>
 
                   <!-- <li><a href="#">Tabel Gudang 3</a></li> -->
               </ul>
@@ -58,8 +58,8 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a class="nav-link">Last Login : <?=$this->session->userdata('last_login')?></a></li>            
-            <li><a class="nav-link" href="<?= base_url('user/setting') ?>" id="setting"><i class="fa fa-user" aria-hidden="true"></i> Setting</a></li>
-            <li><a class="nav-link" href="<?= base_url('user/signout')?>" id="sign_out"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+            <li><a class="nav-link" href="<?= site_url('user/setting') ?>" id="setting"><i class="fa fa-user" aria-hidden="true"></i> Setting</a></li>
+            <li><a class="nav-link" href="<?= site_url('user/signout')?>" id="sign_out"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
           </ul>
       </div>
     </nav>

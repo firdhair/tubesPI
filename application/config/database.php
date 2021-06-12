@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'mysql:hostname=localhost; dbname=inventory_db; charset=utf8;',
+	'hostname' => 'db',
 	'username' => 'root',
-	'password' => '',
-	'database' => '',
-	'dbdriver' => 'pdo',
+	'password' => 'example',
+	'database' => 'inventory_db',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

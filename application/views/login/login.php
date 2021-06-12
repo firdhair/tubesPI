@@ -25,7 +25,7 @@
 
 <body>
   <div class="wrapper">
-  <form action="<?php echo base_url('login/proses_login')?>" class="login" method="post">
+  <form action="<?php echo site_url('login/proses_login')?>" class="login" method="post">
 
     <p class="title"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</p>
     <?php if($this->session->flashdata('msg')){ ?>
@@ -45,7 +45,7 @@
     <?php }else {
       redirect(base_url());
     }?>
-    <?php echo anchor(base_url('login/register'),'Register') ?><br>
+    <?php echo anchor(site_url('login/register'),'Register') ?><br>
     <!-- <a href="#">Forgot your password?</a> -->
     <button>
       <!-- <i class="spinner"></i> -->
