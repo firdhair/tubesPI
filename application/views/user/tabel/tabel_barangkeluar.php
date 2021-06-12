@@ -31,6 +31,8 @@
           <td><?=$dd->nama_barang?></td>
           <td><?=$dd->satuan?></td>
           <td><?=$dd->jumlah?></td>
+          <td><label class="label label-success"><?=($dd->status==0) ? 'Waiting' : 'Done'?></label></td>
+          
       </tr>
     <?php $no++; ?>
     <?php endforeach;?>

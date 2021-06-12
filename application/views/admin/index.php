@@ -349,8 +349,10 @@
           <!-- small box -->
           <div class="small-box bg-red" id="content_box3">
             <div class="inner">
-              <h3 class="h3">Permintaan <br>
+
+              <h3>Permintaan <br>
               barang</h3>
+
 
               <p>Daftar Permintaan</p>
             </div>

@@ -47,12 +47,16 @@
                   <input type="text" name="tanggal" style="margin-left:66px;width:20%;display:inline;" class="form-control" readonly="readonly" value="<?=$d->tanggal?>">
                 </div>
                 <div class="form-group">
-                  <label for="tanggal_keluar" style="margin-left:220px;display:inline;">Tanggal Keluarr</label>
+                  <label for="tanggal_keluar" style="margin-left:220px;display:inline;">Tanggal Keluar</label>
                   <input type="text" name="tanggal_keluar" style="margin-left:66px;width:20%;display:inline;" class="form-control form_datetime" required="" placeholder="Klik Disini">
                 </div>
                 <div class="form-group" style="margin-bottom:40px;">
                   <label for="lokasi" style="margin-left:220px;display:inline;">Lokasi</label>
                   <input type="text" name="lokasi" style="margin-left:117px;width:20%;display:inline;" class="form-control" readonly="readonly" value="<?=$d->lokasi?>">
+                </div>
+                <div class="form-group" style="margin-bottom:40px;">
+                  <label for="nama" style="margin-left:220px;display:inline;">Ditujukan Untuk</label>
+                  <input type="text" name="name" style="margin-left:117px;width:20%;display:inline;" class="form-control" readonly="readonly" value="<?= $this->session->userdata('name')?>">
                 </div>
                 <div class="form-group" style="display:inline-block;">
                   <label for="kode_barang" style="width:87%;margin-left: 12px;">Kode Barang / Barcode</label>

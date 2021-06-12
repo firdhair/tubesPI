@@ -239,6 +239,7 @@
         <th>ID_Transaksi</th>
         <th>Tanggal Masuk/th>
         <th>Tanggal Permintaan</th>
+        <th>Ditujukan untuk</th>
         <th>Lokasi</th>
         <th>Kode Barang</th>
         <th>Nama Barang</th>
@@ -258,13 +259,19 @@
           <td><?=$dd->id_transaksi?></td>
           <td><?=$dd->tanggal_masuk?></td>
           <td><?=$dd->tanggal_keluar?></td>
+          <td><?=$dd->name?></td>
           <td><?=$dd->lokasi?></td>
           <td><?=$dd->kode_barang?></td>
           <td><?=$dd->nama_barang?></td>
           <td><?=$dd->satuan?></td>
           <td><?=$dd->jumlah?></td>
-          <td><a type="button" class="btn btn-danger btn-delete"  href="<?=site_url('admin/delete_barang_permintaan/'.$dd->id)?>" name="btn_delete" style="margin:auto;"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
-          <td><a type="button" class="btn btn-success btn-barangkeluar"  href="<?=site_url('admin/barang_permintaan_keluar/'.$dd->id_transaksi)?>" name="btn_barangkeluar" style="margin:auto;"><i class="fa fa-sign-out" aria-hidden="true"></i></a></td>
+
+          <td><a type="button" class="btn btn-danger btn-delete"  href="<?=base_url('admin/delete_barang_permintaan/'.$dd->id)?>" name="btn_delete" style="margin:auto;"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+          <td><a type="button" class="btn btn-success btn-barangkeluar"  href="<?=base_url('admin/barang_permintaan_keluar/'.$dd->id_transaksi)?>" name="btn_barangkeluar" style="margin:auto;"><i class="fa fa-sign-out" aria-hidden="true"></i></a></td>
+          <td>
+          <label class="label label-success"><?=($dd->status==0) ? 'Waiting' : 'Done'?></label>
+          </td> 
+
       </tr>
     <?php $no++; ?>
     <?php endforeach;?>
