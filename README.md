@@ -7,9 +7,6 @@ Web aplikasi inventory gudang ini di buat memakai framework codeigniter yang san
 Username : admin<br>
 Password : admin
 
-<strong>User Biasa</strong><br>
-Username : husni<br>
-Password : 123husni
 
 # Notes:
 - Setelah di gitclone atau di dowloand source code ini jangan lupa ganti nama foldernya menjadi webgudang.
